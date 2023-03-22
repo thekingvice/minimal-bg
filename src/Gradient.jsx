@@ -1,7 +1,14 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function Gradient() {
+  //color picker
+  const [color, pickColor] = useState("#A75DCA");
+
+  const changeColor = (event) => {
+    pickColor(event.target.value);
+  };
+
   return (
     <section className="Gradient">
       <svg
@@ -21,12 +28,22 @@ function Gradient() {
             y2="400"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A75DCA" />
+            <stop stop-color={color} />
             <stop offset="1" stop-color="#7400AA" stop-opacity="0" />
           </linearGradient>
         </defs>
       </svg>
-      <button className="Gradient__change-color">Change Color</button>
+      {/* <button className="Gradient__change-color" onClick={changeStop}>
+        {stop}
+      </button> */}
+      <input
+        type="color"
+        name="color-picker"
+        value={color}
+        id=""
+        onChange={changeColor}
+      />
+      <input type="text" />
     </section>
   );
 }
