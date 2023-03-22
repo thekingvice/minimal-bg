@@ -43,7 +43,6 @@ function Gradient() {
         id=""
         onChange={changeColor}
       />
-      <input type="text" />
     </section>
   );
 }
