@@ -4,14 +4,14 @@ import React, { useRef } from "react";
 
 function Gradient() {
   //color picker
-  const [color, pickColor] = useState("#A75DCA");
+  const [color1, pickColor1] = useState("#A75DCA");
 
-  const changeColor = (event) => {
-    pickColor(event.target.value);
+  const changeColor1 = (event) => {
+    pickColor1(event.target.value);
   };
 
-  //color picker 2
-  const [color2, pickColor2] = useState("#7400AA");
+  // color picker 2
+  const [color2, pickColor2] = useState("#202020");
 
   const changeColor2 = (event) => {
     pickColor2(event.target.value);
@@ -36,33 +36,57 @@ function Gradient() {
   return (
     <section className="Gradient">
       <svg
-        ref={svgRef}
-        width="400"
-        height="400"
-        viewBox="0 0 400 400"
+        width="2520"
+        height="1440"
+        viewBox="0 0 2520 1440"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="400" height="400" fill="url(#paint0_linear_1_2)" />
+        <rect width="2520" height="1440" fill="url(#paint0_linear_1_2)" />
         <defs>
           <linearGradient
             id="paint0_linear_1_2"
-            x1="200"
+            x1="1260"
             y1="0"
-            x2="200"
-            y2="400"
+            x2="1260"
+            y2="1440"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color={color} />
-            <stop offset="1" stop-color={color2} stop-opacity="100" />
+            <stop stop-color={color1} />
+            <stop offset="1" stop-color={color2} />
           </linearGradient>
         </defs>
       </svg>
+      {/*  */}
+      <svg
+        ref={svgRef}
+        width="2520"
+        height="1440"
+        viewBox="0 0 2520 1440"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="2520" height="1440" fill="url(#paint0_linear_1_2)" />
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_2"
+            x1="1260"
+            y1="0"
+            x2="1260"
+            y2="1440"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color={color1} />
+            <stop offset="1" stop-color={color2} />
+          </linearGradient>
+        </defs>
+      </svg>
+      {/*  */}
       <input
         type="color"
-        name="color-picker"
-        value={color}
-        onChange={changeColor}
+        name="color-picker-1"
+        value={color1}
+        onChange={changeColor1}
       />
       <input
         type="color"

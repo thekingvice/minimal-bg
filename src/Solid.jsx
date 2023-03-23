@@ -4,10 +4,10 @@ import "./App.css";
 
 function Solid() {
   //color picker
-  const [color, pickColor] = useState("#A75DCA");
+  const [color1, pickColor1] = useState("#A75DCA");
 
-  const changeColor = (event) => {
-    pickColor(event.target.value);
+  const changeColor1 = (event) => {
+    pickColor1(event.target.value);
   };
 
   //download
@@ -30,20 +30,31 @@ function Solid() {
   return (
     <section className="Solid">
       <svg
-        ref={svgRef}
-        width="400"
-        height="400"
-        viewBox="0 0 400 400"
+        width="2520"
+        height="1440"
+        viewBox="0 0 2520 1440"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M400 0H0V400H400V0Z" fill={color} />
+        <path d="M2520 0H0V1440H2520V0Z" fill={color1} />
       </svg>
+      {/*  */}
+      <svg
+        ref={svgRef}
+        width="2520"
+        height="1440"
+        viewBox="0 0 2520 1440"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M2520 0H0V1440H2520V0Z" fill={color1} />
+      </svg>
+      {/*  */}
       <input
         type="color"
-        name="color-picker"
-        value={color}
-        onChange={changeColor}
+        name="color-picker-1"
+        value={color1}
+        onChange={changeColor1}
       />
       <button onClick={downloadSVG}>Download SVG</button>
     </section>
