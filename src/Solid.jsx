@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./App.css";
 import React, { useRef } from "react";
+import "./App.css";
 
-function Gradient() {
+function Solid() {
   //color picker
   const [color, pickColor] = useState("#A75DCA");
 
@@ -10,13 +10,7 @@ function Gradient() {
     pickColor(event.target.value);
   };
 
-  //color picker 2
-  const [color2, pickColor2] = useState("#7400AA");
-
-  const changeColor2 = (event) => {
-    pickColor2(event.target.value);
-  };
-
+  //download
   const svgRef = useRef(null);
 
   const downloadSVG = () => {
@@ -26,7 +20,7 @@ function Gradient() {
     const svgURL = URL.createObjectURL(svgBlob);
     const downloadLink = document.createElement("a");
     downloadLink.href = svgURL;
-    downloadLink.download = "gradient.svg";
+    downloadLink.download = "solid.svg";
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
@@ -34,7 +28,7 @@ function Gradient() {
   };
 
   return (
-    <section className="Gradient">
+    <section className="Solid">
       <svg
         ref={svgRef}
         width="400"
@@ -43,20 +37,7 @@ function Gradient() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="400" height="400" fill="url(#paint0_linear_1_2)" />
-        <defs>
-          <linearGradient
-            id="paint0_linear_1_2"
-            x1="200"
-            y1="0"
-            x2="200"
-            y2="400"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color={color} />
-            <stop offset="1" stop-color={color2} stop-opacity="100" />
-          </linearGradient>
-        </defs>
+        <path d="M400 0H0V400H400V0Z" fill={color} />
       </svg>
       <input
         type="color"
@@ -64,15 +45,9 @@ function Gradient() {
         value={color}
         onChange={changeColor}
       />
-      <input
-        type="color"
-        name="color-picker-2"
-        value={color2}
-        onChange={changeColor2}
-      />
       <button onClick={downloadSVG}>Download SVG</button>
     </section>
   );
 }
 
-export default Gradient;
+export default Solid;
