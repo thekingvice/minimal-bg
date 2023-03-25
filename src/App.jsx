@@ -8,9 +8,9 @@ import Solid from "./Solid";
 function App() {
   return (
     <div className="App">
-      <Solid />
-      <Gradient />
       <Saturn />
+      <Gradient />
+      <Solid />
     </div>
   );
 }

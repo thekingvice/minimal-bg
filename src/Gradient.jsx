@@ -34,31 +34,39 @@ function Gradient() {
   };
 
   return (
-    <section className="Gradient">
-      <svg
-        width="2520"
-        height="1440"
-        viewBox="0 0 2520 1440"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="2520" height="1440" fill="url(#paint0_linear_1_2)" />
-        <defs>
-          <linearGradient
-            id="paint0_linear_1_2"
-            x1="1260"
-            y1="0"
-            x2="1260"
-            y2="1440"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color={color1} />
-            <stop offset="1" stop-color={color2} />
-          </linearGradient>
-        </defs>
-      </svg>
+    <section className="Gradient __main">
+      <h1 className="__heading">Gradient</h1>
+      <section className="__preview-wrapper">
+        <svg
+          className="__preview"
+          width="2520"
+          height="1440"
+          viewBox="0 0 2520 1440"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="2520" height="1440" fill="url(#paint0_linear_1_2)" />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_2"
+              x1="1260"
+              y1="0"
+              x2="1260"
+              y2="1440"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color={color1} />
+              <stop offset="1" stop-color={color2} />
+            </linearGradient>
+          </defs>
+        </svg>
+        <button className="__download-button" onClick={downloadSVG}>
+          <img className="__download-icon" src="images/download.svg" alt="" />
+        </button>
+      </section>
       {/*  */}
       <svg
+        className="__downloadable-svg"
         ref={svgRef}
         width="2520"
         height="1440"
@@ -81,20 +89,25 @@ function Gradient() {
           </linearGradient>
         </defs>
       </svg>
+
       {/*  */}
-      <input
-        type="color"
-        name="color-picker-1"
-        value={color1}
-        onChange={changeColor1}
-      />
-      <input
-        type="color"
-        name="color-picker-2"
-        value={color2}
-        onChange={changeColor2}
-      />
-      <button onClick={downloadSVG}>Download SVG</button>
+      <h1 className="__sub-heading">Pick Colors:</h1>
+      <section className="__picker-wrapper">
+        <input
+          className="__color-picker"
+          type="color"
+          name="color-picker-1"
+          value={color1}
+          onChange={changeColor1}
+        />
+        <input
+          className="__color-picker"
+          type="color"
+          name="color-picker-2"
+          value={color2}
+          onChange={changeColor2}
+        />
+      </section>
     </section>
   );
 }

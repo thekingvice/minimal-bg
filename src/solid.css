@@ -1,0 +1,70 @@
+.__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+
+.__heading {
+  font-size: 3rem;
+}
+
+.__preview-wrapper {
+  width: 50%;
+  min-width: 15rem;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+.__preview {
+  width: 100%;
+  height: fit-content;
+}
+
+.__download-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background: transparent;
+  padding: 0.5rem;
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.__download-button:hover {
+  background: white;
+}
+
+.__download-button:hover > .__download-icon {
+  content: url("images/download-dark.svg");
+}
+
+.__download-icon {
+  width: 2rem;
+}
+
+.__downloadable-svg {
+  display: none;
+}
+
+.__sub-heading {
+  color: rgb(200, 200, 200);
+}
+
+.__color-picker {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.__picker-wrapper {
+  display: flex;
+  gap: 1rem;
+}

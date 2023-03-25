@@ -1,4 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;900&display=swap");
+
 :root {
   background-color: #242424;
   color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: rgba(146, 146, 146, 0.266);
+  outline: dotted 2px;
+}
+
+html {
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
