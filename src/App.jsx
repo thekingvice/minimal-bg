@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import "./Gradient.jsx";
-// import Nav from "./Nav";
+import Nav from "./Nav";
 import Gradient from "./Gradient.jsx";
 import Saturn from "./Saturn";
 import Solid from "./Solid";
-import Nav from "./Nav";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Saturn />
       <Gradient />
       <Solid />
+      <Footer />
     </div>
   );
 }
