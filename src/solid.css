@@ -43,7 +43,7 @@
 }
 
 .__download-button:hover > .__download-icon {
-  content: url("images/download-dark.svg");
+  content: url("/download-dark.svg");
 }
 
 .__download-icon {
