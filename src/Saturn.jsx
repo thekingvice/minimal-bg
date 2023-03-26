@@ -10,7 +10,7 @@ function Saturn() {
     pickColor1(event.target.value);
   };
   //color picker 2
-  const [color2, pickColor2] = useState("#BA75FF");
+  const [color2, pickColor2] = useState("#FFC675");
 
   const changeColor2 = (event) => {
     pickColor2(event.target.value);
@@ -22,13 +22,13 @@ function Saturn() {
     pickColor3(event.target.value);
   };
   //color picker 4
-  const [color4, pickColor4] = useState("#7400AA");
+  const [color4, pickColor4] = useState("#85FFFD");
 
   const changeColor4 = (event) => {
     pickColor4(event.target.value);
   };
   //color picker 5
-  const [color5, pickColor5] = useState("#E08888");
+  const [color5, pickColor5] = useState("#FF00F7");
 
   const changeColor5 = (event) => {
     pickColor5(event.target.value);
