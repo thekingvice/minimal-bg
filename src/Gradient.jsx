@@ -61,7 +61,7 @@ function Gradient() {
           </defs>
         </svg>
         <button className="__download-button" onClick={downloadSVG}>
-          <img className="__download-icon" src="images/download.svg" alt="" />
+          <img className="__download-icon" src="/download.svg" alt="" />
         </button>
       </section>
       {/*  */}

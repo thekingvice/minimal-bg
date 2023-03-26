@@ -1,5 +1,5 @@
 import "./footer.css";
-import "/images/my-site.svg";
+
 function Footer() {
   return (
     <footer className="Footer">
@@ -8,21 +8,21 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="__social" src="images/github-mark-white.svg" alt="" />
+        <img className="__social" src="/github-mark-white.svg" alt="" />
       </a>
       <a
         href="https://www.linkedin.com/in/vicente-villarreal-44b804266/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="__social" src="images/linkedin.svg" alt="" />
+        <img className="__social" src="/linkedin.svg" alt="" />
       </a>
       <a
         href="https://my-website-pi-three.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="__social" src="images/my-site.svg" alt="" />
+        <img className="__social" src="/my-site.svg" alt="" />
       </a>
     </footer>
   );
