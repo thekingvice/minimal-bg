@@ -1,5 +1,5 @@
 import "./footer.css";
-
+import "/images/my-site.svg";
 function Footer() {
   return (
     <footer className="Footer">
