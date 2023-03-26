@@ -42,7 +42,7 @@ function Solid() {
           <path d="M2520 0H0V1440H2520V0Z" fill={color1} />
         </svg>
         <button className="__download-button" onClick={downloadSVG}>
-          <img className="__download-icon" src="images/download.svg" alt="" />
+          <img className="__download-icon" src="/download.svg" alt="" />
         </button>
       </section>
       {/*  */}
