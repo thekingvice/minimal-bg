@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;900&display=swap");
 
-:root {
-  background-color: #242424;
-  color: white;
-}
-
 *,
 *::before,
 *::after {
@@ -16,12 +11,19 @@
   padding: 0;
   border: 0;
   font: inherit;
-  background: rgba(146, 146, 146, 0.266);
-  outline: dotted 2px;
+  /* background: rgba(146, 146, 146, 0.266);
+  outline: dotted 2px; */
+  font-weight: 900;
 }
 
 html {
   font-family: "Archivo", sans-serif;
+  /* background-color: #242424; */
+  background: #232323;
+  background-image: radial-gradient(#404040 1px, transparent 0);
+  background-size: 20px 20px;
+  /* background-position: -19px -19px; */
+  color: white;
 }
 
 body {
@@ -39,5 +41,4 @@ video {
 h1 {
   font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 900;
 }

@@ -1,0 +1,19 @@
+/* <nav>
+  <li class="hov">
+    Hover Me!
+    <ul class="main">
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+    </ul>
+  </li>
+</nav>
+
+
+
+<!--  -->
+
+var hoverItem = document.querySelector('.hov');
+hoverItem.addEventListener('click', function() {
+this.classList.toggle('clicked'); }); */

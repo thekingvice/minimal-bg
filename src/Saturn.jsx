@@ -52,7 +52,7 @@ function Saturn() {
   };
 
   return (
-    <section className="Saturn __main">
+    <section className="Saturn __main" id="saturn">
       <h1 className="__heading">Saturn</h1>
       <section className="__preview-wrapper">
         <svg

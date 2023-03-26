@@ -28,7 +28,7 @@ function Solid() {
   };
 
   return (
-    <section className="Solid __main">
+    <section className="Solid __main" id="solid">
       <h1 className="__heading">Solid</h1>
       <section className="__preview-wrapper">
         <svg

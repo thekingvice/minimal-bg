@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import React, { useRef } from "react";
+import "./App.css";
 
 function Gradient() {
   //color picker
@@ -34,7 +34,7 @@ function Gradient() {
   };
 
   return (
-    <section className="Gradient __main">
+    <section className="Gradient __main" id="gradient">
       <h1 className="__heading">Gradient</h1>
       <section className="__preview-wrapper">
         <svg
