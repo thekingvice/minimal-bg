@@ -5,12 +5,6 @@
   padding: 1rem;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -48,9 +42,7 @@ li {
   margin-top: 0;
   background-color: #242424;
 }
-.main li:first-child {
-  margin-top: 0;
-}
+
 .hov {
   position: fixed;
   height: 40px;
