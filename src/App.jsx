@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import "./Gradient.jsx";
 import Nav from "./Nav";
 import Gradient from "./Gradient.jsx";
 import Saturn from "./Saturn";
